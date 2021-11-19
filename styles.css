@@ -1,0 +1,112 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100vh;
+
+  color: #111235;
+  background: linear-gradient(7.28deg, #eef5ff 0%, #ffffff 99.69%);
+  font-family: Hellix, sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+
+section {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin-bottom: 120px;
+}
+section.gradient {
+  background: linear-gradient(99.85deg, #bad5ff 0%, #6487bf 100%);
+}
+section.blue {
+  background-color: lightblue;
+}
+section.pink {
+  background-color: pink;
+}
+
+header {
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04),
+    0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+.header-text {
+  font-size: 36px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.section-container {
+  height: 100%;
+  padding: 0 15px;
+}
+.centered {
+  text-align: center;
+}
+img {
+  width: 100%;
+  margin: 40px auto;
+}
+h1 {
+  font-size: 64px;
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 75px;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 30px auto;
+}
+
+.btn {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 18px 0;
+  max-width: 65%;
+  margin: auto;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: #4b5092;
+}
+.btn-secondary {
+  background-color: #fff;
+  color: #436baa;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 57.61px;
+}
+
+.section-text.light-blue {
+  background-color: #f2f8ff;
+  padding: 50px 15px;
+}
+.padding-bypass {
+  margin: 0 -15px;
+}
+.section-title {
+  margin: 0;
+  padding-top: 80px;
+  font-size: 46px;
+}
+.trainer-img {
+  margin-bottom: -4px;
+}
