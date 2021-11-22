@@ -11,8 +11,13 @@ body {
 }
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 500;
+}
+a {
+  text-decoration: none;
+  color: rgba(17, 18, 53, 1);
 }
 
 section {
@@ -22,12 +27,6 @@ section {
 }
 section.gradient {
   background: linear-gradient(99.85deg, #bad5ff 0%, #6487bf 100%);
-}
-section.blue {
-  background-color: lightblue;
-}
-section.pink {
-  background-color: pink;
 }
 
 header {
@@ -81,6 +80,7 @@ p {
   text-decoration: none;
   border-radius: 35px;
   cursor: pointer;
+  text-align: center;
 }
 .btn-primary {
   background-color: #4b5092;
@@ -109,4 +109,90 @@ h2 {
 }
 .trainer-img {
   margin-bottom: -4px;
+}
+
+.feature-card {
+  padding: 50px 40px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+.feature-card.blue {
+  background-color: #e4f0ff;
+}
+.feature-card.purple {
+  background-color: rgba(114, 122, 239, 0.1);
+}
+.feature-card h3 {
+  font-size: 24px;
+}
+.feature-card p {
+  font-size: 16px;
+}
+
+#get-now-btn {
+  margin-top: 40px;
+}
+
+.navigation {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.navigation h3 {
+  font-size: 36px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 50px auto;
+}
+li {
+  margin-bottom: 34px;
+  font-size: 16px;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+input[type="email"] {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 8px 12px;
+  height: 100%;
+  color: rgba(17, 18, 53, 1);
+}
+input[type="image"] {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 7px 12px;
+  height: 100%;
+  width: 17px;
+  color: rgba(17, 18, 53, 1);
+}
+.email-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.socials {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.socials a img {
+  width: 17px;
+}
+
+.copyright {
+  font-size: 14px;
 }
