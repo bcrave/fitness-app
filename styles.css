@@ -21,8 +21,7 @@ a {
 }
 
 section {
-  min-width: 100vw;
-  min-height: 100vh;
+  margin: 0 auto;
   margin-bottom: 120px;
 }
 section.gradient {
@@ -42,6 +41,19 @@ header {
   font-size: 36px;
 }
 
+.navbar {
+  width: 50%;
+  display: none;
+}
+.navbar > ul {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar > ul > li {
+  margin: 0 0 0 45px;
+}
 .bold {
   font-weight: 700;
 }
@@ -195,4 +207,115 @@ input[type="image"] {
 
 .copyright {
   font-size: 14px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 992px) {
+  section {
+    max-width: 450px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  header {
+    justify-content: space-around;
+  }
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hero > .section-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .hero > .section-container > .section-text {
+    width: 50%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero > .section-container > .section-text h1 {
+    font-size: 72px;
+    line-height: 75px;
+  }
+  .hero > .section-container > .section-text p {
+    max-width: 432px;
+    margin-left: 0;
+    text-align: start;
+  }
+  .hero .btn {
+    margin: 0;
+    max-width: 30%;
+  }
+
+  .description > .section-container {
+    display: flex;
+  }
+  .description > .section-container > .section-image {
+    width: 50%;
+  }
+  .description > .section-container > .card-wrapper {
+    width: 50%;
+    margin: auto 0;
+  }
+  .card {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 50px;
+  }
+  .section-text.light-blue {
+    padding: 50px 40px;
+  }
+
+  .alexander-arnold > .section-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: relative;
+  }
+  .alexander-arnold > .section-container > .section-image {
+    width: 40%;
+    position: relative;
+  }
+  .alexander-arnold > .section-container > .section-image img {
+    width: 90%;
+  }
+
+  .alexander-arnold > .section-container > .section-text {
+    width: 50%;
+    text-align: start;
+  }
+  .trainer-info {
+    max-width: 418px;
+  }
+  .trainer-img {
+    position: absolute;
+    bottom: -208px;
+    left: 0px;
+  }
+  .alexander-arnold > .section-container > .section-text .btn {
+    margin: 0;
+    max-width: 230px;
+    margin-bottom: 20px;
+  }
+  .benefits > .section-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .benefits > .section-container > .section-image {
+    width: 40%;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .feature-card {
+    max-width: 370px;
+  }
 }
