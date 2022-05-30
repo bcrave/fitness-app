@@ -209,10 +209,17 @@ input[type="image"] {
   font-size: 14px;
 }
 
+.desktop-text {
+  display: none;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 992px) {
   section {
     max-width: 450px;
+  }
+  .desktop-only {
+    display: none;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -317,5 +324,49 @@ input[type="image"] {
   }
   .feature-card {
     max-width: 370px;
+  }
+  .mobile-text {
+    display: none;
+  }
+  .desktop-text {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .desktop-vertical-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    width: 40%;
+  }
+
+  .desktop-only {
+    display: relative;
+    bottom: 65px;
+    left: 65px;
+    width: 300px;
+  }
+  .navigation {
+    margin-bottom: 0px;
+  }
+  .navigation > .section-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+  }
+  .footer-links > div {
+    text-align: start;
+  }
+  .section-container {
+    width: 90%;
+  }
+  .socials {
+    width: 200px;
   }
 }
